@@ -1,0 +1,41 @@
+<table class="table table-striped">
+
+    <thead>
+
+        <tr>
+
+            <th>ID</th>
+            <th>Clase</th>
+            <th>Fecha</th>
+            <th>Hora Inicio</th>
+            <th>Hora Fin</th>
+            <th>Cupo</th>
+            <th>Entrenador</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr th:each="c : ${clases}">
+
+            <td th:text="${c.id}"></td>
+
+            <td th:text="${c.nombre}"></td>
+
+            <td th:text="${c.fecha}"></td>
+
+            <td th:text="${c.horaInicio}"></td>
+
+            <td th:text="${c.horaFin}"></td>
+
+            <td th:text="${c.cupoMaximo}"></td>
+
+            <td th:text="${c.entrenador.nombre}"></td>
+
+        </tr>
+
+    </tbody>
+
+</table>

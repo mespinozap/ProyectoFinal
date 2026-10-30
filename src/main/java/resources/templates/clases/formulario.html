@@ -1,0 +1,39 @@
+<form th:object="${clase}" method="post">
+
+    <div class="mb-3">
+        <label>Nombre de la Clase</label>
+
+        <input type="text"
+               th:field="*{nombre}"
+               class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Fecha</label>
+
+        <input type="date"
+               th:field="*{fecha}"
+               class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Hora Inicio</label>
+
+        <input type="time"
+               th:field="*{horaInicio}"
+               class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Cupo Máximo</label>
+
+        <input type="number"
+               th:field="*{cupoMaximo}"
+               class="form-control">
+    </div>
+
+    <button class="btn btn-primary">
+        Guardar
+    </button>
+
+</form>

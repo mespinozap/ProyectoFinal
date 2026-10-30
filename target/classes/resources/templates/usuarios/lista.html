@@ -1,0 +1,55 @@
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Cédula</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Rol</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr th:each="u : ${usuarios}">
+
+            <td th:text="${u.id}"></td>
+
+            <td th:text="${u.nombre}"></td>
+
+            <td th:text="${u.cedula}"></td>
+
+            <td th:text="${u.telefono}"></td>
+
+            <td th:text="${u.email}"></td>
+
+            <td th:text="${u.rol}"></td>
+
+            <td>
+                <span th:if="${u.activo}"
+                      class="badge bg-success">
+                    Activo
+                </span>
+
+                <span th:unless="${u.activo}"
+                      class="badge bg-danger">
+                    Inactivo
+                </span>
+            </td>
+
+            <td>
+                <a th:href="@{/usuarios/{id}/editar(id=${u.id})}"
+                   class="btn btn-warning btn-sm">
+                   Editar
+                </a>
+            </td>
+
+        </tr>
+
+    </tbody>
+
+</table>

@@ -1,0 +1,14 @@
+com/gimnasio/model/Rol.class
+com/gimnasio/controller/LoginController.class
+com/gimnasio/service/ClaseService.class
+com/gimnasio/repository/UsuarioRepository.class
+com/gimnasio/service/UsuarioService.class
+com/gimnasio/model/Clase.class
+com/gimnasio/model/Usuario.class
+com/gimnasio/controller/UsuarioController.class
+com/gimnasio/GimnasioApplication.class
+com/gimnasio/controller/ClaseController.class
+com/gimnasio/security/SecurityConfig.class
+com/gimnasio/service/UsuarioDetailsService.class
+com/gimnasio/config/DataInitializer.class
+com/gimnasio/repository/ClaseRepository.class
